@@ -1,0 +1,1419 @@
+{
+	"id": "9f120dd1-99c9-54c1-7114-78cff4f81e75",
+	"name": "OneHourTranslation API V2",
+	"description": null,
+	"order": [
+		"3b31765e-2516-7447-27ed-68e2c7a85193",
+		"88d3fb71-c99f-7113-1b3b-19237a9bd13e",
+		"d858087e-8864-29a3-9e84-a1fde4ae9641",
+		"50e7e776-55e4-61a5-5139-95d457f68b61",
+		"226e0e3b-da32-81df-8740-fcb995058946",
+		"42a27ff2-5e32-349e-d2ce-14fd56e0ac57",
+		"c8dea37c-270b-feda-ef90-ece196b45bf7",
+		"5363b128-6e46-9de9-70c3-441570e54fb7",
+		"12760147-00f6-865b-d65a-d8482c0cddb5",
+		"af567531-06d9-74af-1fc4-ae906d355d35",
+		"b7471e82-d844-146b-0c0d-dfba2b9ffd81",
+		"c51ca136-9d58-c625-bce1-443eca372b8a",
+		"458e7b6a-fbf4-a8b8-0ba6-2e4cad671acc",
+		"b2679e30-212a-cc24-7655-c901a80c7e99",
+		"1ed23eb3-4e62-729a-ce28-bf8319b65cf3",
+		"2e3089db-a9d2-a17d-333d-a9ec309a28d0",
+		"475e7623-9272-9520-ed5d-dcb876925d5b",
+		"a064274f-99ce-8f7a-cb97-71490f5af0a9",
+		"e42acd45-c227-d8b3-ece1-20d7d5e32cde",
+		"affce8db-5dc9-75ad-4075-00eb04c22455",
+		"1c5fce41-665b-68f7-5ef2-0c03487b252a",
+		"64118a0b-17c5-83bf-5055-53429df62a02",
+		"b31a2d70-d454-6a4e-6b15-3ab4f20579f4",
+		"7581597f-3928-60ce-365f-ab34373bab62"
+	],
+	"folders": [],
+	"timestamp": 1483970902865,
+	"owner": "421543",
+	"public": false,
+	"requests": [
+		{
+			"id": "12760147-00f6-865b-d65a-d8482c0cddb5",
+			"headers": "",
+			"url": "{{api2}}/projects/proof-translated?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "translations",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "target_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "reference_resources",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom0",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom1",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom2",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom3",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom4",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom5",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom6",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom7",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom8",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom9",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484829681920,
+			"name": "New Proofreading Project [Source and translated docs]",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "1c5fce41-665b-68f7-5ef2-0c03487b252a",
+			"name": "MT - Detect Language",
+			"dataMode": "urlencoded",
+			"data": [
+				"content="
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/mt/detect/text?secret_key={{secret_key}}&public_key={{public_key}}&source_content=",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "1ed23eb3-4e62-729a-ce28-bf8319b65cf3",
+			"headers": "",
+			"url": "{{api2}}/projects/<PROJECT_ID>/comments?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"0": "c",
+					"1": "o",
+					"2": "n",
+					"3": "t",
+					"4": "e",
+					"5": "n",
+					"6": "t",
+					"7": "=",
+					"key": "content"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484830449177,
+			"name": "Post a New Comment",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "226e0e3b-da32-81df-8740-fcb995058946",
+			"headers": "",
+			"url": "{{api2}}/tools/quote?resources=<RESOURCES>&secret_key={{secret_key}}&public_key={{public_key}}&wordcount=&source_language=&target_language=&service=&expertise=&currency=",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "target_language",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text"
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484831988987,
+			"name": "Get Quote",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "2e3089db-a9d2-a17d-333d-a9ec309a28d0",
+			"headers": "",
+			"url": "{{api2}}/project/<PROJECT_ID>/tag",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Add Tag to Project",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1484830824562,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3b31765e-2516-7447-27ed-68e2c7a85193",
+			"name": "Get Account Details",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text"
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text"
+				},
+				{
+					"key": "file_name",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "@upload",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "file_mime",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/account?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "42a27ff2-5e32-349e-d2ce-14fd56e0ac57",
+			"headers": "",
+			"url": "{{api2}}/tools/wordcount?secret_key={{secret_key}}&public_key={{public_key}}&resources=",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file_name",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "@upload",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "file_mime",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484571167146,
+			"name": "Get Wordcount",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "458e7b6a-fbf4-a8b8-0ba6-2e4cad671acc",
+			"headers": "",
+			"url": "{{api2}}/projects/<PROJECT_ID>?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484830114834,
+			"name": "Cancel Project",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "475e7623-9272-9520-ed5d-dcb876925d5b",
+			"headers": "",
+			"url": "{{api2}}/project/<PROJECT_ID>/tag?secret_key={{secret_key}}&public_key={{public_key}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_name",
+					"value": "hello there",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Get Project Tags",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1484830934498,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "50e7e776-55e4-61a5-5139-95d457f68b61",
+			"headers": "",
+			"url": "{{api2}}/resources/<RESOURCE_UUID>?secret_key={{secret_key}}&public_key={{public_key}}&fetch=",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text"
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text"
+				},
+				{
+					"key": "file_name",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "@upload",
+					"value": "",
+					"type": "file"
+				},
+				{
+					"key": "file_mime",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484831972067,
+			"name": "Get Resource Content",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "5363b128-6e46-9de9-70c3-441570e54fb7",
+			"headers": "",
+			"url": "{{api2}}/projects/proof-general?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "reference_resources",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom0",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom1",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom2",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom3",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom4",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom5",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom6",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom7",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom8",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom9",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484829591976,
+			"name": "New Proofreading Project [Only source docs]",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "64118a0b-17c5-83bf-5055-53429df62a02",
+			"name": "Discover Supported Languages",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "sources",
+					"value": "rsc-5198cc35a97f58-53786317",
+					"type": "text"
+				},
+				{
+					"key": "source_language",
+					"value": "en-us",
+					"type": "text"
+				},
+				{
+					"key": "target_language",
+					"value": "fr-fr",
+					"type": "text"
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text"
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/discover/languages?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "7581597f-3928-60ce-365f-ab34373bab62",
+			"name": "Discover Supported Expertise",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "sources",
+					"value": "rsc-51af36a9da8c64-60827612",
+					"type": "text"
+				},
+				{
+					"key": "source_language",
+					"value": "en-us",
+					"type": "text"
+				},
+				{
+					"key": "target_language",
+					"value": "fr-fr",
+					"type": "text"
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text"
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "force_workbench",
+					"value": "1",
+					"type": "text"
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/discover/expertise?secret_key={{secret_key}}&public_key={{public_key}}&source_language=&target_language=",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "88d3fb71-c99f-7113-1b3b-19237a9bd13e",
+			"name": "Create a Resource From Text",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text"
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text"
+				},
+				{
+					"key": "text",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{api2}}/resources/text",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "a064274f-99ce-8f7a-cb97-71490f5af0a9",
+			"headers": "",
+			"url": "{{api2}}/project/<PROJECT_ID>/tag/<TAG_ID>?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484831063473,
+			"name": "Delete Tag",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75",
+			"responses": []
+		},
+		{
+			"id": "af567531-06d9-74af-1fc4-ae906d355d35",
+			"headers": "",
+			"url": "{{api2}}/projects/transcription?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "length",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "reference_resources",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom0",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom1",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom2",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom3",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom4",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom5",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom6",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom7",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom8",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom9",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484829907505,
+			"name": "New Transcription Project",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "affce8db-5dc9-75ad-4075-00eb04c22455",
+			"name": "MT - Machine Translate [Text]",
+			"dataMode": "urlencoded",
+			"data": [
+				"content="
+			],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/mt/translate/text?secret_key={{secret_key}}&public_key={{public_key}}&source_content=&source_language=&target_language=",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "b2679e30-212a-cc24-7655-c901a80c7e99",
+			"headers": "",
+			"url": "{{api2}}/projects/<PROJECT_ID>/comments?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				""
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484830336913,
+			"name": "Get Project Comments",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "b31a2d70-d454-6a4e-6b15-3ab4f20579f4",
+			"name": "Discover Supported Language Pairs",
+			"dataMode": "params",
+			"data": [],
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": null,
+			"url": "{{api2}}/discover/language_pairs?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"tests": "",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "b7471e82-d844-146b-0c0d-dfba2b9ffd81",
+			"headers": "",
+			"url": "{{api2}}/projects/transproof?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "target_language",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "reference_resources",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom0",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom1",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom2",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom3",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom4",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom5",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom6",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom7",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom8",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom9",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484829976129,
+			"name": "New Translation + Editing Project",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "c51ca136-9d58-c625-bce1-443eca372b8a",
+			"headers": "",
+			"url": "{{api2}}/projects/<PROJECT_ID>?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				"secret_key={{secret_key}}&public_key={{public_key}}&source_language=&sources=&length=&notes=&callback_url={{callback}}"
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484830047053,
+			"name": "Get Project Details",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "c8dea37c-270b-feda-ef90-ece196b45bf7",
+			"headers": "",
+			"url": "{{api2}}/projects/translation?secret_key={{secret_key}}&public_key={{public_key}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "sources",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "source_language",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "target_language",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "callback_url",
+					"value": "{{callback}}",
+					"type": "text"
+				},
+				{
+					"key": "notes",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "expertise",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "wordcount",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "reference_resources",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "name",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom0",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom1",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom2",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom3",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom4",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom5",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom6",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom7",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom8",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "custom9",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484829449094,
+			"name": "New Translation Project",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "d858087e-8864-29a3-9e84-a1fde4ae9641",
+			"headers": "",
+			"url": "{{api2}}/resources/file",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text"
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text"
+				},
+				{
+					"key": "@upload",
+					"value": "",
+					"type": "file"
+				},
+				{
+					"key": "file_mime",
+					"value": "",
+					"type": "text"
+				},
+				{
+					"key": "file_name",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484570681900,
+			"name": "Create a Resource From File",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75"
+		},
+		{
+			"id": "e42acd45-c227-d8b3-ece1-20d7d5e32cde",
+			"headers": "",
+			"url": "{{api2}}/projects/<PROJECT_ID>/rating",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "secret_key",
+					"value": "{{secret_key}}",
+					"type": "text"
+				},
+				{
+					"key": "public_key",
+					"value": "{{public_key}}",
+					"type": "text"
+				},
+				{
+					"key": "type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rate",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remarks",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "publish",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categories[service_was_on_time]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[service_support_helpful]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[service_good_quality]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[service_trans_responded]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[service_would_recommend]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_is_good]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_bad_formatting]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_misunderstood_source]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_spell_tps_grmr_mistakes]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_text_miss]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_not_followed_instrctns]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_inconsistent]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categories[trans_bad_written]",
+					"value": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484831639138,
+			"name": "Rate Project",
+			"description": "",
+			"collectionId": "9f120dd1-99c9-54c1-7114-78cff4f81e75",
+			"responses": []
+		}
+	]
+}

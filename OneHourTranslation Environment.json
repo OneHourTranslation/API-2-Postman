@@ -1,0 +1,38 @@
+{
+  "id": "186ac73c-d948-09eb-0aa2-b73b81d4e876",
+  "name": "OneHourTranslation Environment",
+  "values": [
+    {
+      "key": "secret_key",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "hovered": false
+    },
+    {
+      "key": "public_key",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "hovered": false
+    },
+    {
+      "key": "api2",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "hovered": false
+    },
+    {
+      "key": "callback",
+      "value": "",
+      "type": "text",
+      "enabled": true,
+      "hovered": false
+    }
+  ],
+  "timestamp": 1485085911932,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-01-22T11:52:03.828Z",
+  "_postman_exported_using": "Postman/4.9.2"
+}
