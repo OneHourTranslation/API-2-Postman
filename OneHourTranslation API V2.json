@@ -806,7 +806,7 @@
 					"enabled": true
 				},
 				{
-					"key": "length",
+					"key": "wordcount",
 					"value": "",
 					"type": "text",
 					"enabled": false
